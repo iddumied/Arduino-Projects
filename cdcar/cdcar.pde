@@ -9,10 +9,38 @@ void setup() {
   pinMode(Motor2f, OUTPUT);
   pinMode(Motor2b, OUTPUT);
 
-  analogWrite(Motor1f, 10);
-  digitalWrite(Motor1b, LOW);
-  analogWrite(Motor2f, 10);
-  digitalWrite(Motor2b, LOW);
+  analogWrite(Motor1f, HIGH);
+  analogWrite(Motor1b, LOW);
+  analogWrite(Motor2f, HIGH);
+  analogWrite(Motor2b, LOW);
 }
 
-void loop() {}
+void loop() {
+  delay(100);
+
+  analogWrite(Motor1f, LOW;
+  analogWrite(Motor1b, LOW);
+  analogWrite(Motor2f, LOW);
+  analogWrite(Motor2b, LOW);
+
+  delay(100);
+
+  analogWrite(Motor1f, LOW);
+  analogWrite(Motor1b, HIGH);
+  analogWrite(Motor2f, LOW);
+  analogWrite(Motor2b, HIGH);
+
+  delay(100);
+
+  analogWrite(Motor1f, LOW;
+  analogWrite(Motor1b, LOW);
+  analogWrite(Motor2f, LOW);
+  analogWrite(Motor2b, LOW);
+
+  delay(100);
+
+  analogWrite(Motor1f, HIGH);
+  analogWrite(Motor1b, LOW);
+  analogWrite(Motor2f, HIGH);
+  analogWrite(Motor2b, LOW);
+}
