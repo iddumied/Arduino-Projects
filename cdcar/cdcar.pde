@@ -30,11 +30,44 @@ void forward() {
   digitalWrite(Motor2b, HIGH);
 }
 
+void left() {
+  digitalWrite(Motor1f, LOW);
+  digitalWrite(Motor1b, HIGH);
+  digitalWrite(Motor2f, LOW);
+  digitalWrite(Motor2b, LOW);
+}
+
+void right() {
+  digitalWrite(Motor1f, LOW);
+  digitalWrite(Motor1b, LOW);
+  digitalWrite(Motor2f, LOW);
+  digitalWrite(Motor2b, HIGH);
+}
+
 void loop() {
-  forward();
-  delay(10000);
-  backward();
-  delay(10000);
+  // Radnom Movement
+
+  switch (random(0,4)) {
+    case 0:
+      forward();
+      delay(random(1000,10000));
+      break;
+
+    case 1:
+      backward();
+      delay(random(1000,10000));
+      break;
+    
+    case 2:
+      left();
+      delay(random(1000,10000));
+      break;
+
+    case 3:
+      right();
+      delay(random(1000,10000));
+      break;
+  }
 }
 
 
